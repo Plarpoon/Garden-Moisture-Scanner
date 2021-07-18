@@ -26,9 +26,6 @@ while True:
         print("Wet, Leave it!")
         print(moisture)
 
-        # Send plant moisture status to Pybytes
-        pybytes.send_signal(2, "The Plant is Wet! Leave it!")
-
     # Send temperature data to Pybytes.
     pybytes.send_signal(1, celsius)
     print("sending: {}".format(celsius))
