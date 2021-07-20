@@ -21,13 +21,9 @@ while True:
         print(moisture)
         drynessStatus = True
 
-        pybytes.send_signal(2, "The Plant is Dry!")
-
     if moisture >= thresholdUp:
         print("The plant is wet!")
         print(moisture)
-
-        pybytes.send_signal(2, "The Plant is Wet!")
 
     #   Send result to PyBytes.
     if drynessStatus == True and celsius <= 30:
